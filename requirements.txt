@@ -1,0 +1,53 @@
+# Core ML/DL frameworks (your constraints)
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2
+torchmetrics[image]
+
+# Hugging Face ecosystem (compatible versions)
+huggingface_hub==0.14.1
+diffusers==0.15.1
+transformers==4.28.1
+accelerate==0.18.0
+datasets==2.11.0
+
+# Image processing and visualization
+Pillow==9.5.0
+matplotlib==3.7.1
+opencv-python==4.8.0.74
+
+# Scientific computing
+numpy==1.24.3
+scipy==1.10.1
+
+# Evaluation metrics
+torchmetrics==0.11.4
+pytorch-fid==0.3.0
+lpips==0.1.4
+
+# Progress bars and utilities
+tqdm==4.65.0
+wandb==0.15.4
+
+# Additional utilities
+scikit-learn==1.2.2
+scikit-image==0.20.0
+seaborn==0.12.2
+
+# Memory optimization
+psutil==5.9.5
+
+# For Jupyter notebooks
+ipywidgets==8.0.6
+jupyter==1.0.0
+
+# Google Drive access
+# PyDrive2==1.17.0
+# google-api-python-client==2.88.0
+# google-auth-httplib2==0.1.0
+# google-auth-oauthlib==1.0.0
+
+# Fix urllib3 warning
+urllib3==1.26.16
+requests==2.31.0
+chardet==5.1.0

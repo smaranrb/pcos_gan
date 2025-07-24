@@ -1,0 +1,79 @@
+{
+  "model_info": {
+    "checkpoint_path": "/workspace/v2/pcos_ddim_checkpoints/best_model.pth",
+    "model_parameters": 73009153,
+    "image_size": 128,
+    "num_classes": 2,
+    "class_names": [
+      "notinfected",
+      "infected"
+    ]
+  },
+  "evaluation_results": {
+    "class_conditional": {
+      "notinfected": {
+        "mean": 0.38167881965637207,
+        "std": 0.19618655741214752,
+        "min": 0.0,
+        "max": 0.9985812902450562,
+        "samples_saved": "./v2/evaluation_results/class_notinfected_samples.png"
+      },
+      "infected": {
+        "mean": 0.4081999957561493,
+        "std": 0.2514781057834625,
+        "min": 0.0,
+        "max": 1.0,
+        "samples_saved": "./v2/evaluation_results/class_infected_samples.png"
+      }
+    },
+    "fid_score": 160.59963989257812,
+    "inception_score": {
+      "mean": 3.771465301513672,
+      "std": 0.24284179508686066
+    },
+    "pipeline": {
+      "path": null,
+      "test_results": null
+    }
+  },
+  "config": {
+    "data_path": "./data",
+    "image_size": 128,
+    "num_channels": 1,
+    "num_train_timesteps": 1000,
+    "num_inference_steps": 100,
+    "beta_start": 0.0001,
+    "beta_end": 0.02,
+    "beta_schedule": "scaled_linear",
+    "prediction_type": "epsilon",
+    "batch_size": 8,
+    "block_out_channels": [
+      128,
+      128,
+      256,
+      256,
+      512
+    ],
+    "down_block_types": [
+      "DownBlock2D",
+      "DownBlock2D",
+      "DownBlock2D",
+      "DownBlock2D",
+      "AttnDownBlock2D"
+    ],
+    "up_block_types": [
+      "UpBlock2D",
+      "AttnUpBlock2D",
+      "UpBlock2D",
+      "UpBlock2D",
+      "UpBlock2D"
+    ],
+    "layers_per_block": 2,
+    "attention_head_dim": 8,
+    "num_classes": 2,
+    "class_names": [
+      "notinfected",
+      "infected"
+    ]
+  }
+}
