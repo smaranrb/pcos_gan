@@ -1,0 +1,5 @@
+path to split datset: ./data
+classes: positive, negative
+
+✅ negative: 1012 train, 338 test
+✅ positive: 1014 train, 338 test
