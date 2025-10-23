@@ -3,8 +3,8 @@ import shutil
 import random
 
 def split_dataset(
-    source_dir="./data_raw",
-    dest_dir="./data",
+    source_dir="./data",
+    dest_dir="./data_split",
     split_ratio=0.8,  # 80% train, 20% test
     seed=42
 ):

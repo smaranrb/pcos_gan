@@ -1,0 +1,4 @@
+git branch -m main v1
+git fetch origin
+git branch -u origin/v1 v1
+git remote set-head origin -a
